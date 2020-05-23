@@ -6,6 +6,7 @@
 @Author  : Aimee
 @Date    : 2020/5/23 10:07
 @Desc    :参考链接：https://www.cnblogs.com/noonjuan/p/12063882.html
+            需要设置的是server_setting.ini里面的内容，ip和port。
 ================================================="""
 import shelve
 from socket import *
