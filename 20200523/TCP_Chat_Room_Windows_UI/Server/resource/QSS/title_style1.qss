@@ -1,0 +1,65 @@
+QLabel#TitleContent
+{
+    color: #000000;
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonMin
+{
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonMin:hover
+{
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonMin:pressed
+{
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonMax
+{
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonMax:hover
+{
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonMax:pressed
+{
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonRestore
+{
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonRestore:hover
+{
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonRestore:pressed
+{
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonClose
+{
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonClose:hover
+{
+    border-image:url(./resource/img/back.jpg);
+}
+
+QPushButton#ButtonClose:pressed
+{
+    border-image:url(./resource/img/back.jpg);
+}
