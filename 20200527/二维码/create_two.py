@@ -23,7 +23,7 @@ def generate_simple():
     # 二维码添加数据
     # qr.add_data("你是猪吗？")
     # qr.add_data("http://www.baidu.com")
-    qr.add_data("我有点能理解你了！！！")
+    qr.add_data("欢迎来到子涵的博客！")
 
     # 生成二维码
     qr.make(fit=True)
@@ -36,12 +36,12 @@ def generate_simple():
 # myqr不支持中文
 def generate_complex():
     myqr.run(
-        words="I love you",
+        words="Welcome to zihan's blog",
         version=5,
         level="H",
-        picture="./image/dongman.jpg",
+        picture="./image/girl.jpg",
         colorized=True,  # True为彩色 False为黑白
-        save_name="dongman.png",
+        save_name="girl.png",
         save_dir=os.getcwd() + "/image"
     )
 
