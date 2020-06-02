@@ -1,0 +1,50 @@
+/** 左侧目录 */
+#navCategory {
+  position: fixed;
+  z-index: 99;
+  top: 325px;
+  left: 1200px;
+  max-width: 300px;
+}
+
+#left_menu {
+  text-align: left;
+  border-left: 1px solid #ddd;
+  font-size: 14px;
+  margin-left: 20px !important;
+}
+
+#left_menu ul {
+  margin: 0 0 10px 20px;
+}
+
+#left_menu li {
+  list-style: none !important;
+}
+
+#left_menu a {
+  display: inline-table;
+  margin-left: 5px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #313131;
+  outline: 0;
+  text-decoration: none !important;
+}
+
+#left_menu a:hover {
+  color: #eb5055;
+  border-bottom: none !important;
+}
+
+#left_menu>li::before {
+  position: relative;
+  top: 0;
+  left: -4px;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  content: "";
+  border-radius: 50%;
+  background-color: #eb5055;
+}

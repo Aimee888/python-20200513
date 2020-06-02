@@ -1,0 +1,7 @@
+模板页面：默认的枫叶页面
+链接：https://www.cnblogs.com/smart-zihan/p/13023457.html#_labelTop
+上传content.js到博客园
+编写页脚HTML代码
+二级：h2-h3
+<!-- 顶部目录 -->
+<script language="javascript" type="text/javascript" src="https://files.cnblogs.com/files/smart-zihan/content.js"></script>

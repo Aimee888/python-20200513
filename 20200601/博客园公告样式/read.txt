@@ -1,0 +1,8 @@
+版本1：绝对路径
+问题：当把页面缩小时，头像跟着往左移动，移出了公告栏
+<div align="center" style="postion">
+  <a href="https://www.cnblogs.com/smart-zihan/">
+    <img style="position: absolute;right: 70px;top: 220px;width: 90px;height: 90px;border-radius: 50%;"
+      src="https://images.cnblogs.com/cnblogs_com/smart-zihan/1778004/t_200601060351boy.jpg">
+  </a>
+</div>

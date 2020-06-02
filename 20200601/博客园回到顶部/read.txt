@@ -1,0 +1,27 @@
+参考链接：https://www.cnblogs.com/zhurong/p/12786887.html#_label2_0_0
+页首HTML代码
+图片还是用的别人的飞机图片
+<!-- 回到顶部 -->
+<style>
+    #back-top {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    z-index: 10;
+}
+
+    #back-top span {
+    width: 50px;
+    height: 64px;
+    display: block;
+    background: url(http://images.cnblogs.com/cnblogs_com/seanshao/855033/o_rocket.png) no-repeat center center;
+}
+
+    #back-top a {
+    outline: none
+}
+</style>
+
+<script language="javascript" type="text/javascript" src="https://files.cnblogs.com/files/smart-zihan/com2top.js"></script>
+
+<p id="back-top" style="display:none" title="回到页面顶部"><a href="#top"><span></span></a></p>
