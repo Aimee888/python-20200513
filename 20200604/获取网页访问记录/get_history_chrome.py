@@ -7,6 +7,7 @@
 @Date    : 2020/6/4 16:50
 @Desc    :参考链接：https://blog.csdn.net/weixin_38331049/article/details/105015356
 ================================================="""
+# 获取用户数据
 import sqlite3 as db
 import getpass
 
@@ -34,8 +35,8 @@ sql = "select url,title,datetime(last_visit_time/1000000-11644473600,'unixepoch'
       " >=datetime('now','start of day','+0 day') and " \
       "datetime(last_visit_time/1000000-11644473600,'unixepoch','localtime')<datetime('now','start of day','+1 day')"
 result = readFronSqllite(path, sql)
-print(result)
 
+# 发送邮件部分
 import smtplib
 import json
 from email.mime.text import MIMEText
@@ -62,4 +63,17 @@ def sendEmail():
         print("Error: 无法发送邮件")
 
 
-sendEmail()
+# 定时程序
+from datetime import datetime
+import os
+from apscheduler.schedulers.blocking import BlockingScheduler
+
+if __name__ == '__main__':
+    scheduler = BlockingScheduler()
+    scheduler.add_job(sendEmail, 'interval', seconds=10)
+    print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C    '))
+
+    try:
+        scheduler.start()
+    except (KeyboardInterrupt, SystemExit):
+        pass
